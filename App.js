@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Bananas from './Bananas';
 import LotsOfGreetings from './Greeting';
+import State1 from './State1';
 
 export default class App extends React.Component {
   render() {
@@ -14,6 +15,7 @@ export default class App extends React.Component {
         <Bananas />
         <LotsOfGreetings />
         <Bananas />
+        <State1 />
       </View>
     );
   }
