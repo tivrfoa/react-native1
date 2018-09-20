@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Bananas from './Bananas';
+import LotsOfGreetings from './Greeting';
 
 export default class App extends React.Component {
   render() {
@@ -11,7 +12,9 @@ export default class App extends React.Component {
         <Text>Changes you make will automatically reload.</Text>
         <Text>Shake your phone to open the developer menu.</Text>        
         <Bananas />
-      </View>      
+        <LotsOfGreetings />
+        <Bananas />
+      </View>
     );
   }
 }
