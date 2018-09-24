@@ -1,13 +1,15 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, ScrollView } from 'react-native';
 import Bananas from './Bananas';
 import LotsOfGreetings from './Greeting';
 import State1 from './State1';
+import LotsOfStyles from './LotsOfStyles';
 
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
+      <ScrollView contentContainerStyle={styles.scroll}>
+       {/* View style={styles.container}> */}
         <Text style={styles.title}>Nice</Text>
         <Text>Open up App.js to start working on your app!</Text>
         <Text>Changes you make will automatically reload.</Text>
@@ -16,7 +18,8 @@ export default class App extends React.Component {
         <LotsOfGreetings />
         <Bananas />
         <State1 />
-      </View>
+        <LotsOfStyles />
+      </ScrollView>
     );
   }
 }
@@ -31,5 +34,10 @@ const styles = StyleSheet.create({
 
   title: {
     fontWeight: 'bold',
+  },
+
+  scroll: {
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });
